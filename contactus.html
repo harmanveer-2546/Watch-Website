@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>TISSOT WATCHES :: Contact</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="tissotwatches.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="wrapper">
+<header>
+  <h1>TISSOT WATCHES AND CO.</h1>
+</header>
+<nav>
+  <ul>
+    <li><a href="Homepage.html">Home</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="shopnow.html">Collection</a></li>
+    <li><a href="contactus.html">Contact Us</a></li>
+  </ul>
+</nav>
+
+<main><div id="xyz">
+  <h2><u>Contact Us</u></h2>
+  
+  <h2>Your feedback is important to us!
+    <br>
+    Kindly leave us any message or open a ticket for support below!
+  </h2>
+</div>
+  <form>
+    <input class="fin" required type="text" name="fname" id="fname" placeholder="First Name" >
+    
+    <input class="fin" required type="text" name="lname" id="lname" placeholder="Last Name" >
+    
+    <input
+    class="fin"
+    required
+      type="email"
+      name="num"
+      id="num"
+      placeholder="Email"
+    >
+    
+    <textarea
+    required
+    class="fin"
+      name="query"
+      id="query"
+      cols="38"
+      rows="10"
+      placeholder="Enter your query"
+    ></textarea>
+    <div id ="xyz">
+    <button type="button" onclick="sub()"   id="sbmt">Submit</button>
+    <button type="reset" id="reset" onclick="reset()">Reset</button>
+  </div>
+  </form>
+</main>
+
+<script>
+function sub() { 
+var x = document.getElementsByClassName('fin')
+var count = 0;
+for(let i = 0; i<x.length; i++)
+{
+if(x[i].value == ""){
+  count++
+}
+console.log(count)
+}
+if(count>0){
+window.alert("Please enter all details before submitting!")
+}
+else{
+window.alert("Form submitted, Thank you!")
+}
+}
+
+
+</script>
+<div class="clear">
+    <a id="mobile" href="tel:824-526-8843"><p>For further information you can call us at</p>(toll free-824-526-8843)</a><span id="desktop"></span><br><br>
+
+    </div>
+<footer>
+  
+Copyright &copy;Tissot Watches and Co.
+</footer>
+</div>
+</body>
+</html>
